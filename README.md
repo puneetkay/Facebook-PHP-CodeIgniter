@@ -1,4 +1,21 @@
 Facebook-PHP-CodeIgniter
 ========================
 
-Facebook PHP SDK for CodeIgniter
+This repo is based on Facebook PHP SDK (v.3.2.2)
+Link: https://github.com/facebook/facebook-php-sdk
+
+
+Usage
+-----
+
+The [config file][CONFIG] is a good place to start. All you need to do is 
+enter application id and secret.
+
+    $config['appId']   = 'APP_ID_HERE';
+    $config['secret']  = 'SECRET_HERE';
+
+Thats it!
+
+Read the controller and view file to understand the working.
+
+[CONFIG]: http://github.com/facebook/facebook-php-sdk/blob/master/examples/example.php
