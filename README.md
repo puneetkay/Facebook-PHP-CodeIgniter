@@ -18,4 +18,4 @@ Thats it!
 
 Read the controller and view file to understand the working.
 
-[CONFIG]: http://github.com/facebook/facebook-php-sdk/blob/master/examples/example.php
+[CONFIG]: https://github.com/puneetkay/Facebook-PHP-CodeIgniter/blob/master/config/facebook.php
