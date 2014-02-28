@@ -1,7 +1,7 @@
 Facebook-PHP-CodeIgniter
 ========================
 
-This repo is based on Facebook PHP SDK (v.3.2.2)
+This repo is based on Facebook PHP SDK (v.3.2.3)
 Link: https://github.com/facebook/facebook-php-sdk
 
 
