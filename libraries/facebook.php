@@ -59,6 +59,25 @@ class Facebook extends BaseFacebook
       && session_status() !== PHP_SESSION_ACTIVE) || !session_id()) {
       session_start();
     }
+
+    $_REQUEST += $_GET;
+
+    if($config == null){
+      $this->_ci =& get_instance();
+      $this->_ci->load->config('facebook');
+      $config = array(
+        'appId' => $this->_ci->config->item('appId'),
+        'secret' => $this->_ci->config->item('secret'),
+        );
+    }
+    
+    if( !isset($config['appId']) || !isset($config['secret']) ){
+      $this->_ci =& get_instance();
+      $this->_ci->load->config('facebook');
+      $config['appId'] = $this->_ci->config->item('appId');
+      $config['secret'] = $this->_ci->config->item('secret');
+    }
+
     parent::__construct($config);
     if (!empty($config['sharedSession'])) {
       $this->initSharedSession();
