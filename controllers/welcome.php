@@ -4,6 +4,9 @@ class Welcome extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
+
+        // To use site_url and redirect on this controller.
+        $this->load->helper('url');
 	}
 
 	public function login(){
@@ -37,7 +40,7 @@ class Welcome extends CI_Controller {
 
         } else {
             $data['login_url'] = $this->facebook->getLoginUrl(array(
-                'redirect_uri' => 'http://localhost/welcome/login',
+                'redirect_uri' => site_url('welcome/login'), 
                 'scope' => array("email") // permissions here
             ));
         }
@@ -51,10 +54,9 @@ class Welcome extends CI_Controller {
 
         // Logs off session from website
         $this->facebook->destroySession();
-        $this->facebook->setSession(null);
         // Make sure you destory website session as well.
 
-        return('welcome/login');
+        redirect('welcome/login');
     }
 
 }
