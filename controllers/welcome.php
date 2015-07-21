@@ -28,7 +28,8 @@ class Welcome extends CI_Controller {
                 $user = null;
             }
         }else {
-            $this->facebook->destroySession();
+            // Solves first time login issue. (Issue: #10)
+            //$this->facebook->destroySession();
         }
 
         if ($user) {
