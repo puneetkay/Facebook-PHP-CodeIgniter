@@ -1,7 +1,8 @@
-Facebook-PHP-CodeIgniter
+Facebook-PHP-CodeIgniter (DEPRECATED)
 ========================
 
 > This repo is based on Facebook PHP SDK (v.3.2.3) Link: https://github.com/facebook/facebook-php-sdk
+> Facebook PHP SDK (v.3.2.3) has been deprecated. I'll update this to latest SDK as soon as possible.
 
 ## Demo
 > http://puneetk.com/facebook-php-codeigniter
